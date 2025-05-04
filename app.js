@@ -78,11 +78,28 @@ console.log(oppositeBoolean(true))
 
 //Is not the number 0
 function isNotZero(num) {
-    if (num = 0)
-        return false
-    else {
-        return true
-    }
+    return num !== 0
 }
 
-console.log(isNotZero())
+console.log(isNotZero(0))
+
+//Calculate the remainder, when divided by each other
+function calcRemainder(num1, num2) {
+    return num1 % num2
+}
+
+console.log(calcRemainder(4, 2))
+
+//Is the number odd?
+function isOdd(num) {
+    return num % 2 !== 0
+}
+
+console.log(isOdd(1))
+
+//If a number is even, return 1 otherwise return -1
+function booleanInteger(num) {
+    return num % 1;
+}
+
+console.log(booleanInteger(2))
